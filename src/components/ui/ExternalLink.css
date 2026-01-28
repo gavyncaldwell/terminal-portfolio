@@ -1,0 +1,15 @@
+.external-link {
+  color: var(--emerald-400);
+  transition: color var(--transition-fast);
+}
+
+.external-link:hover {
+  color: var(--emerald-300);
+}
+
+.external-link__icon {
+  display: inline-block;
+  margin-left: var(--space-1);
+  font-size: 0.75em;
+  opacity: 0.7;
+}

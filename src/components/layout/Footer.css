@@ -1,0 +1,30 @@
+.footer {
+  padding: var(--space-6) 0;
+  border-top: 1px solid var(--border-primary);
+  margin-top: auto;
+}
+
+.footer__content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  text-align: center;
+}
+
+.footer__privacy {
+  color: var(--text-muted);
+  font-size: var(--text-xs);
+}
+
+.footer__copyright {
+  color: var(--text-muted);
+  font-size: var(--text-xs);
+}
+
+@media (min-width: 640px) {
+  .footer__content {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+  }
+}

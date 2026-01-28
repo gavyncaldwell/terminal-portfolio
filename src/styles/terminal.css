@@ -1,0 +1,137 @@
+/* Terminal Window Styles */
+.terminal-window {
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-primary);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.terminal-titlebar {
+  display: flex;
+  align-items: center;
+  padding: var(--space-3) var(--space-4);
+  background-color: var(--bg-elevated);
+  border-bottom: 1px solid var(--border-primary);
+  position: relative;
+}
+
+.terminal-dots {
+  display: flex;
+  gap: var(--space-2);
+}
+
+.terminal-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.terminal-dot--close {
+  background-color: var(--emerald-700);
+}
+
+.terminal-dot--minimize {
+  background-color: var(--emerald-600);
+}
+
+.terminal-dot--maximize {
+  background-color: var(--emerald-500);
+}
+
+.terminal-title {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: var(--text-xs);
+  color: var(--text-muted);
+}
+
+.terminal-content {
+  padding: var(--space-4);
+}
+
+/* Prompt Styles */
+.prompt {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-2);
+  font-family: var(--font-mono);
+}
+
+.prompt__chevron {
+  color: var(--emerald-500);
+  font-weight: 600;
+}
+
+.prompt__command {
+  color: var(--text-sage);
+}
+
+.prompt__args {
+  color: var(--emerald-400);
+}
+
+/* Cursor */
+.cursor {
+  display: inline-block;
+  width: 0.6em;
+  height: 1.2em;
+  background-color: var(--emerald-400);
+  vertical-align: text-bottom;
+  animation: blink 1.06s step-end infinite;
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+/* Output text styling */
+.terminal-output {
+  color: var(--text-secondary);
+  margin-top: var(--space-4);
+  white-space: pre-wrap;
+}
+
+.terminal-output p {
+  margin-bottom: var(--space-3);
+}
+
+.terminal-output p:last-child {
+  margin-bottom: 0;
+}
+
+/* Command line styling */
+.command-line {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-2);
+  margin-bottom: var(--space-3);
+}
+
+.command-line:last-child {
+  margin-bottom: 0;
+}
+
+/* Hash prefix for lists */
+.hash-prefix {
+  color: var(--text-muted);
+  user-select: none;
+}
+
+/* Link in terminal context */
+.terminal-link {
+  color: var(--emerald-400);
+  text-decoration: none;
+  border-bottom: 1px dashed var(--emerald-700);
+  transition: all var(--transition-fast);
+}
+
+.terminal-link:hover {
+  color: var(--emerald-300);
+  border-bottom-color: var(--emerald-500);
+}

@@ -1,0 +1,20 @@
+.writing {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+.writing__header {
+  margin-bottom: var(--space-2);
+}
+
+.writing__list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.writing__empty {
+  color: var(--text-muted);
+  font-style: italic;
+}

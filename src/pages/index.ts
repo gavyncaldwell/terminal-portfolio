@@ -1,0 +1,7 @@
+export { default as Home } from './Home'
+export { default as Work } from './Work'
+export { default as Writing } from './Writing'
+export { default as WritingPost } from './WritingPost'
+export { default as Videos } from './Videos'
+export { default as Uses } from './Uses'
+export { default as Contact } from './Contact'

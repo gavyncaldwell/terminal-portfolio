@@ -1,0 +1,16 @@
+.layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.layout__main {
+  flex: 1;
+  padding: var(--space-8) 0;
+}
+
+@media (min-width: 640px) {
+  .layout__main {
+    padding: var(--space-12) 0;
+  }
+}

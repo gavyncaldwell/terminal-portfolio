@@ -1,0 +1,73 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+.home__hero {
+  min-height: 200px;
+}
+
+.home__grid {
+  display: grid;
+  gap: var(--space-6);
+}
+
+@media (min-width: 640px) {
+  .home__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Status list */
+.home__status-list,
+.home__currently-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.home__status-list li,
+.home__currently-list li {
+  display: flex;
+  gap: var(--space-3);
+}
+
+.home__status-label,
+.home__currently-label {
+  color: var(--text-muted);
+  min-width: 5rem;
+}
+
+.home__status-value,
+.home__currently-value {
+  color: var(--text-secondary);
+}
+
+/* Posts */
+.home__posts {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.home__empty {
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+/* Social list */
+.home__social-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.home__social-list li {
+  display: flex;
+  gap: var(--space-3);
+}
+
+.home__social-username {
+  color: var(--text-muted);
+}

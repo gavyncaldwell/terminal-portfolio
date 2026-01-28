@@ -1,0 +1,62 @@
+export const frontmatter = {
+  title: "Building a Terminal-Themed Portfolio",
+  date: "2024-01-15",
+  description: "A look at how I built this portfolio site with React, TypeScript, and a CLI aesthetic.",
+  tags: ["react", "typescript", "design"]
+}
+
+I've always been drawn to terminal aesthetics. There's something satisfying about the simplicity of a command line interface - just text, no distractions.
+
+## The Stack
+
+This site is built with:
+
+- **React 18** with TypeScript
+- **Vite** for blazing fast builds
+- **MDX** for blog posts
+- **Shiki** for syntax highlighting
+
+No CSS frameworks, no component libraries. Just hand-crafted CSS with CSS variables for theming.
+
+## Design Decisions
+
+### Color Palette
+
+The color scheme is built around forest green (emerald) shades:
+
+```css
+--emerald-400: #34d399;
+--emerald-500: #10b981;
+--emerald-600: #059669;
+```
+
+### Typography
+
+Everything uses the system monospace font stack:
+
+```css
+--font-mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+```
+
+This means the site looks native on every platform without loading any custom fonts.
+
+### The Terminal Window
+
+The terminal window component is the heart of the design. It features:
+
+- Three dots (in green shades instead of the typical red/yellow/green)
+- A centered title bar showing the current "path"
+- Content area with proper spacing
+
+## Performance
+
+Without any heavy dependencies, the site loads fast:
+
+- No tracking scripts
+- No external fonts
+- Minimal JavaScript
+- Lazy-loaded images
+
+## Open Source
+
+The source code is available on GitHub. Feel free to use it as inspiration for your own terminal-themed projects.

@@ -1,0 +1,45 @@
+.section-card {
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-primary);
+  border-radius: var(--radius-lg);
+  padding: var(--space-4);
+}
+
+.section-card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: var(--space-4);
+  padding-bottom: var(--space-3);
+  border-bottom: 1px solid var(--border-primary);
+}
+
+.section-card__title {
+  font-size: var(--text-sm);
+  font-weight: 400;
+  color: var(--text-primary);
+}
+
+.section-card__hash {
+  color: var(--text-muted);
+}
+
+.section-card__action {
+  font-size: var(--text-xs);
+  color: var(--emerald-400);
+}
+
+.section-card__action:hover {
+  color: var(--emerald-300);
+}
+
+.section-card__content {
+  color: var(--text-secondary);
+  font-size: var(--text-sm);
+}
+
+@media (min-width: 640px) {
+  .section-card {
+    padding: var(--space-6);
+  }
+}
