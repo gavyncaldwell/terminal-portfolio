@@ -11,23 +11,13 @@ export const socialLinks: SocialLink[] = [
     username: "@gavyncaldwell"
   },
   {
-    name: "Twitter",
-    url: "https://twitter.com/gavyncaldwell",
-    username: "@gavyncaldwell"
-  },
-  {
     name: "LinkedIn",
     url: "https://linkedin.com/in/gavyncaldwell",
     username: "gavyncaldwell"
   },
   {
     name: "YouTube",
-    url: "https://youtube.com/@gavyncaldwell",
-    username: "@gavyncaldwell"
-  },
-  {
-    name: "Email",
-    url: "mailto:hello@gavyncaldwell.com",
-    username: "hello@gavyncaldwell.com"
+    url: "https://www.youtube.com/@gavshobbyquest",
+    username: "@gavshobbyquest"
   }
 ]

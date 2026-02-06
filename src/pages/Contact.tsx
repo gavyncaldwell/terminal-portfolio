@@ -22,8 +22,8 @@ export default function Contact() {
         <section className="contact__section">
           <h2 className="contact__section-title"># availability</h2>
           <div className="contact__availability">
-            <span className="contact__status contact__status--available" />
-            <span>Currently available for freelance work and consulting</span>
+            <span className="contact__status contact__status--busy" />
+            <span>Currently employed full-time, but open to interesting conversations</span>
           </div>
         </section>
 
@@ -43,8 +43,8 @@ export default function Contact() {
           <h2 className="contact__section-title"># prefer email?</h2>
           <p className="contact__text">
             Drop me a line at{' '}
-            <a href="mailto:hello@gavyncaldwell.com" className="contact__email">
-              hello@gavyncaldwell.com
+            <a href="mailto:code@gavyncaldwell.com" className="contact__email">
+              code@gavyncaldwell.com
             </a>
           </p>
         </section>

@@ -1,6 +1,7 @@
 import { Outlet } from 'react-router-dom'
 import Header from './Header'
 import Footer from './Footer'
+import { PopoutTerminal } from '../terminal'
 import './Layout.css'
 
 export default function Layout() {
@@ -13,6 +14,7 @@ export default function Layout() {
         </div>
       </main>
       <Footer />
+      <PopoutTerminal />
     </div>
   )
 }

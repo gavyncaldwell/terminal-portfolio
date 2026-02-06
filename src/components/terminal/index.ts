@@ -1,3 +1,5 @@
 export { default as TerminalWindow } from './TerminalWindow'
 export { default as Prompt } from './Prompt'
 export { default as Cursor } from './Cursor'
+export { default as InteractiveTerminal } from './InteractiveTerminal'
+export { default as PopoutTerminal } from './PopoutTerminal'

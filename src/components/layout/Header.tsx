@@ -3,10 +3,10 @@ import './Header.css'
 
 const navItems = [
   { path: '/', label: 'home' },
+  { path: '/about', label: 'about' },
   { path: '/work', label: 'work' },
-  { path: '/writing', label: 'writing' },
-  { path: '/videos', label: 'videos' },
-  { path: '/uses', label: 'uses' },
+  { path: '/gear', label: 'gear' },
+  { path: '/gallery', label: 'gallery' },
   { path: '/contact', label: 'contact' },
 ]
 

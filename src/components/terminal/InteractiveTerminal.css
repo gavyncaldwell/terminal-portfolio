@@ -1,0 +1,98 @@
+.interactive-terminal {
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  line-height: 1.6;
+  padding: var(--space-4);
+  overflow-y: auto;
+  overflow-x: hidden;
+  cursor: text;
+}
+
+/* Constrain height only in popout */
+.popout-terminal__container .interactive-terminal {
+  max-height: 350px;
+}
+
+.interactive-terminal__entry {
+  margin-bottom: var(--space-2);
+}
+
+.interactive-terminal__command {
+  display: flex;
+  gap: var(--space-2);
+  flex-wrap: wrap;
+}
+
+.interactive-terminal__prompt {
+  display: flex;
+  flex-shrink: 0;
+}
+
+.interactive-terminal__user {
+  color: var(--emerald-400);
+}
+
+.interactive-terminal__at {
+  color: var(--text-muted);
+}
+
+.interactive-terminal__host {
+  color: var(--emerald-400);
+}
+
+.interactive-terminal__colon {
+  color: var(--text-muted);
+}
+
+.interactive-terminal__path {
+  color: #60a5fa;
+}
+
+.interactive-terminal__chevron {
+  color: var(--text-muted);
+  margin-left: var(--space-1);
+  margin-right: var(--space-2);
+}
+
+.interactive-terminal__input-text {
+  color: var(--text-primary);
+}
+
+.interactive-terminal__output {
+  color: var(--text-secondary);
+  padding-left: 0;
+  white-space: pre-wrap;
+}
+
+.interactive-terminal__output--error {
+  color: #f87171;
+}
+
+.interactive-terminal__input-line {
+  display: flex;
+  gap: var(--space-2);
+  align-items: center;
+  min-width: 0;
+}
+
+.interactive-terminal__command {
+  min-width: 0;
+  word-break: break-word;
+}
+
+.interactive-terminal__input {
+  flex: 1;
+  min-width: 0;
+  background: transparent;
+  border: none;
+  color: var(--text-primary);
+  font-family: inherit;
+  font-size: inherit;
+  outline: none;
+  padding: 0;
+  caret-color: var(--emerald-400);
+}
+
+.interactive-terminal__input::selection {
+  background-color: var(--emerald-900);
+}
