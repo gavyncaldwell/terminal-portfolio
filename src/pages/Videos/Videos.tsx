@@ -1,6 +1,6 @@
-import { Prompt } from '../components/terminal'
-import { videos } from '../data/videos'
-import { formatDate } from '../utils/formatDate'
+import { Prompt } from '../../components/terminal'
+import { videos } from '../../data/videos'
+import { formatDate } from '../../utils/formatDate'
 import './Videos.css'
 
 export default function Videos() {

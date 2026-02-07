@@ -1,7 +1,7 @@
-import { Prompt } from '../components/terminal'
-import { ExternalLink } from '../components/ui'
-import { SEO } from '../components/seo'
-import { socialLinks } from '../data/social'
+import { Prompt } from '../../components/terminal'
+import { ExternalLink } from '../../components/ui'
+import { SEO } from '../../components/seo'
+import { socialLinks } from '../../data/social'
 import './Contact.css'
 
 export default function Contact() {

@@ -1,7 +1,7 @@
 import { useState } from 'react'
-import { Prompt } from '../components/terminal'
-import { SEO } from '../components/seo'
-import { galleryImages, GalleryImage } from '../data/gallery'
+import { Prompt } from '../../components/terminal'
+import { SEO } from '../../components/seo'
+import { galleryImages, GalleryImage } from '../../data/gallery'
 import './Gallery.css'
 
 type Category = 'all' | 'setup' | 'coffee' | 'life'

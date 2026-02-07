@@ -1,9 +1,9 @@
 import { useParams, Link } from 'react-router-dom'
-import { Prompt } from '../components/terminal'
-import { SEO, BlogPostingSchema } from '../components/seo'
-import { getPostBySlug, getAdjacentPosts } from '../utils/posts'
-import { formatDate } from '../utils/formatDate'
-import '../styles/mdx.css'
+import { Prompt } from '../../components/terminal'
+import { SEO, BlogPostingSchema } from '../../components/seo'
+import { getPostBySlug, getAdjacentPosts } from '../../utils/posts'
+import { formatDate } from '../../utils/formatDate'
+import '../../styles/mdx.css'
 import './WritingPost.css'
 
 export default function WritingPost() {

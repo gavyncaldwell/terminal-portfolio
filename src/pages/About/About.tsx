@@ -1,6 +1,6 @@
-import { Prompt } from '../components/terminal'
-import { SEO, PersonSchema } from '../components/seo'
-import { getYearsOfExperience } from '../utils/experience'
+import { Prompt } from '../../components/terminal'
+import { SEO, PersonSchema } from '../../components/seo'
+import { getYearsOfExperience } from '../../utils/experience'
 import './About.css'
 
 export default function About() {

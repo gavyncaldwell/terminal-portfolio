@@ -1,7 +1,7 @@
-import { Prompt } from '../components/terminal'
-import { PostCard } from '../components/cards'
-import { SEO } from '../components/seo'
-import { posts } from '../utils/posts'
+import { Prompt } from '../../components/terminal'
+import { PostCard } from '../../components/cards'
+import { SEO } from '../../components/seo'
+import { posts } from '../../utils/posts'
 import './Writing.css'
 
 export default function Writing() {

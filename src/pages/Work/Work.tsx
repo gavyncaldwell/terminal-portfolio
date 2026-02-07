@@ -1,7 +1,7 @@
-import { Prompt } from '../components/terminal'
-import { ExternalLink } from '../components/ui'
-import { SEO } from '../components/seo'
-import { workExperience, projects } from '../data/work'
+import { Prompt } from '../../components/terminal'
+import { ExternalLink } from '../../components/ui'
+import { SEO } from '../../components/seo'
+import { workExperience, projects } from '../../data/work'
 import './Work.css'
 
 export default function Work() {

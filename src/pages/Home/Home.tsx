@@ -1,10 +1,10 @@
 import { useEffect, useState } from 'react'
-import { TerminalWindow, InteractiveTerminal, Prompt, Cursor } from '../components/terminal'
-import { SectionCard } from '../components/cards'
-import { ExternalLink } from '../components/ui'
-import { SEO, PersonSchema } from '../components/seo'
-import { socialLinks } from '../data/social'
-import { getYearsOfExperience } from '../utils/experience'
+import { TerminalWindow, InteractiveTerminal, Prompt, Cursor } from '../../components/terminal'
+import { SectionCard } from '../../components/cards'
+import { ExternalLink } from '../../components/ui'
+import { SEO, PersonSchema } from '../../components/seo'
+import { socialLinks } from '../../data/social'
+import { getYearsOfExperience } from '../../utils/experience'
 import './Home.css'
 
 const DESKTOP_BREAKPOINT = 768

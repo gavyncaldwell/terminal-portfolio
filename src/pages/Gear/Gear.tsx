@@ -1,7 +1,7 @@
-import { Prompt } from '../components/terminal'
-import { ExternalLink } from '../components/ui'
-import { SEO } from '../components/seo'
-import { gearData } from '../data/gear'
+import { Prompt } from '../../components/terminal'
+import { ExternalLink } from '../../components/ui'
+import { SEO } from '../../components/seo'
+import { gearData } from '../../data/gear'
 import './Gear.css'
 
 export default function Gear() {
