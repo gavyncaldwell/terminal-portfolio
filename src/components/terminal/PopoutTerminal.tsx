@@ -35,11 +35,7 @@ export default function PopoutTerminal() {
     if (isHomePage) return
 
     const handleClickOutside = (e: MouseEvent) => {
-      if (
-        isOpen &&
-        terminalRef.current &&
-        !terminalRef.current.contains(e.target as Node)
-      ) {
+      if (isOpen && terminalRef.current && !terminalRef.current.contains(e.target as Node)) {
         setTerminalOpen(false)
       }
     }
@@ -69,10 +65,7 @@ export default function PopoutTerminal() {
             <span className="popout-terminal__title">terminal</span>
             <div className="popout-terminal__controls">
               <span className="popout-terminal__hint">esc to close</span>
-              <button
-                className="popout-terminal__close"
-                onClick={() => setTerminalOpen(false)}
-              >
+              <button className="popout-terminal__close" onClick={() => setTerminalOpen(false)}>
                 ×
               </button>
             </div>

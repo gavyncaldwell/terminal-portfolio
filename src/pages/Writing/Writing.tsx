@@ -29,9 +29,7 @@ export default function Writing() {
             />
           ))
         ) : (
-          <p className="writing__empty">
-            No posts yet. Check back soon!
-          </p>
+          <p className="writing__empty">No posts yet. Check back soon!</p>
         )}
       </div>
     </div>

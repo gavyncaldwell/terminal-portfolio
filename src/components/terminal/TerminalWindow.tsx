@@ -7,7 +7,11 @@ interface TerminalWindowProps {
   className?: string
 }
 
-export default function TerminalWindow({ title = '~', children, className = '' }: TerminalWindowProps) {
+export default function TerminalWindow({
+  title = '~',
+  children,
+  className = '',
+}: TerminalWindowProps) {
   return (
     <div className={`terminal-window ${className}`}>
       <div className="terminal-titlebar">
@@ -18,9 +22,7 @@ export default function TerminalWindow({ title = '~', children, className = '' }
         </div>
         <span className="terminal-title">{title}</span>
       </div>
-      <div className="terminal-content">
-        {children}
-      </div>
+      <div className="terminal-content">{children}</div>
     </div>
   )
 }

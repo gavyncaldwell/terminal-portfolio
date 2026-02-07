@@ -21,8 +21,8 @@ export default function Contact() {
         <section className="contact__section">
           <h2 className="contact__section-title"># get in touch</h2>
           <p className="contact__text">
-            I'm always open to discussing new projects, interesting ideas, or opportunities
-            to collaborate. Feel free to reach out through any of the channels below.
+            I'm always open to discussing new projects, interesting ideas, or opportunities to
+            collaborate. Feel free to reach out through any of the channels below.
           </p>
         </section>
 

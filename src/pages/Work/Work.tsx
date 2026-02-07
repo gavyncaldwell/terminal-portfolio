@@ -87,7 +87,9 @@ export default function Work() {
                 <p className="work__project-description">{project.description}</p>
                 <div className="work__project-tags">
                   {project.tags.map(tag => (
-                    <span key={tag} className="work__project-tag">{tag}</span>
+                    <span key={tag} className="work__project-tag">
+                      {tag}
+                    </span>
                   ))}
                 </div>
               </div>

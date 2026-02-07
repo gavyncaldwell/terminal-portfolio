@@ -8,7 +8,10 @@ interface InteractiveTerminalProps {
   showHistory?: boolean
 }
 
-export default function InteractiveTerminal({ autoFocus = false, showHistory = true }: InteractiveTerminalProps) {
+export default function InteractiveTerminal({
+  autoFocus = false,
+  showHistory = true,
+}: InteractiveTerminalProps) {
   const [input, setInput] = useState('')
   const [commandHistory, setCommandHistory] = useState<string[]>([])
   const [historyIndex, setHistoryIndex] = useState(-1)
@@ -41,14 +44,14 @@ export default function InteractiveTerminal({ autoFocus = false, showHistory = t
             '  pwd           - Show current page',
             '  whoami        - About me',
             '  cat readme    - View site info',
-            '  clear         - Clear terminal history'
-          ]
+            '  clear         - Clear terminal history',
+          ],
         }
 
       case 'ls':
         return {
           command: cmd,
-          output: ['', ...ROUTE_NAMES.map(name => `  ${name}/`), '']
+          output: ['', ...ROUTE_NAMES.map(name => `  ${name}/`), ''],
         }
 
       case 'cd':
@@ -71,13 +74,13 @@ export default function InteractiveTerminal({ autoFocus = false, showHistory = t
         return {
           command: cmd,
           output: [`cd: ${arg}: No such directory`],
-          isError: true
+          isError: true,
         }
 
       case 'pwd':
         return {
           command: cmd,
-          output: [getCurrentDir()]
+          output: [getCurrentDir()],
         }
 
       case 'whoami':
@@ -86,8 +89,8 @@ export default function InteractiveTerminal({ autoFocus = false, showHistory = t
           output: [
             'Gavyn Caldwell',
             'Senior Frontend Developer',
-            'Privacy advocate & serial hobbyist'
-          ]
+            'Privacy advocate & serial hobbyist',
+          ],
         }
 
       case 'cat':
@@ -100,14 +103,14 @@ export default function InteractiveTerminal({ autoFocus = false, showHistory = t
               'Personal portfolio built with React, TypeScript, and Vite.',
               'Terminal aesthetic because why not.',
               '',
-              'Type "ls" to see pages, "cd <page>" to navigate.'
-            ]
+              'Type "ls" to see pages, "cd <page>" to navigate.',
+            ],
           }
         }
         return {
           command: cmd,
           output: [`cat: ${arg || '(missing file)'}: No such file`],
-          isError: true
+          isError: true,
         }
 
       case 'clear':
@@ -121,7 +124,7 @@ export default function InteractiveTerminal({ autoFocus = false, showHistory = t
         return {
           command: cmd,
           output: [`command not found: ${command}`, 'Type "help" for available commands.'],
-          isError: true
+          isError: true,
         }
     }
   }
@@ -151,9 +154,8 @@ export default function InteractiveTerminal({ autoFocus = false, showHistory = t
     } else if (e.key === 'ArrowUp') {
       e.preventDefault()
       if (commandHistory.length > 0) {
-        const newIndex = historyIndex === -1
-          ? commandHistory.length - 1
-          : Math.max(0, historyIndex - 1)
+        const newIndex =
+          historyIndex === -1 ? commandHistory.length - 1 : Math.max(0, historyIndex - 1)
         setHistoryIndex(newIndex)
         setInput(commandHistory[newIndex])
       }
@@ -201,30 +203,33 @@ export default function InteractiveTerminal({ autoFocus = false, showHistory = t
 
   return (
     <div className="interactive-terminal" onClick={focusInput} ref={terminalRef}>
-      {showHistory && history.map((entry, i) => (
-        <div key={i} className="interactive-terminal__entry">
-          {entry.command !== '' && (
-            <div className="interactive-terminal__command">
-              <span className="interactive-terminal__prompt">
-                <span className="interactive-terminal__user">visitor</span>
-                <span className="interactive-terminal__at">@</span>
-                <span className="interactive-terminal__host">gavyncaldwell.com</span>
-                <span className="interactive-terminal__colon">:</span>
-                <span className="interactive-terminal__path">{getCurrentDir()}</span>
-                <span className="interactive-terminal__chevron">$</span>
-              </span>
-              <span className="interactive-terminal__input-text">{entry.command}</span>
-            </div>
-          )}
-          {entry.output.length > 0 && (
-            <div className={`interactive-terminal__output ${entry.isError ? 'interactive-terminal__output--error' : ''}`}>
-              {entry.output.map((line, j) => (
-                <div key={j}>{line || '\u00A0'}</div>
-              ))}
-            </div>
-          )}
-        </div>
-      ))}
+      {showHistory &&
+        history.map((entry, i) => (
+          <div key={i} className="interactive-terminal__entry">
+            {entry.command !== '' && (
+              <div className="interactive-terminal__command">
+                <span className="interactive-terminal__prompt">
+                  <span className="interactive-terminal__user">visitor</span>
+                  <span className="interactive-terminal__at">@</span>
+                  <span className="interactive-terminal__host">gavyncaldwell.com</span>
+                  <span className="interactive-terminal__colon">:</span>
+                  <span className="interactive-terminal__path">{getCurrentDir()}</span>
+                  <span className="interactive-terminal__chevron">$</span>
+                </span>
+                <span className="interactive-terminal__input-text">{entry.command}</span>
+              </div>
+            )}
+            {entry.output.length > 0 && (
+              <div
+                className={`interactive-terminal__output ${entry.isError ? 'interactive-terminal__output--error' : ''}`}
+              >
+                {entry.output.map((line, j) => (
+                  <div key={j}>{line || '\u00A0'}</div>
+                ))}
+              </div>
+            )}
+          </div>
+        ))}
 
       <div className="interactive-terminal__input-line">
         <span className="interactive-terminal__prompt">
@@ -239,7 +244,7 @@ export default function InteractiveTerminal({ autoFocus = false, showHistory = t
           ref={inputRef}
           type="text"
           value={input}
-          onChange={(e) => setInput(e.target.value)}
+          onChange={e => setInput(e.target.value)}
           onKeyDown={handleKeyDown}
           className="interactive-terminal__input"
           spellCheck={false}

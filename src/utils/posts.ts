@@ -13,11 +13,17 @@ export interface Post {
 // Note: In a real setup, you'd use import.meta.glob
 // For now, we'll manually import posts
 import HelloWorld, { frontmatter as helloWorldMeta } from '../content/posts/hello-world.mdx'
-import BuildingTerminalPortfolio, { frontmatter as terminalPortfolioMeta } from '../content/posts/building-a-terminal-portfolio.mdx'
+import BuildingTerminalPortfolio, {
+  frontmatter as terminalPortfolioMeta,
+} from '../content/posts/building-a-terminal-portfolio.mdx'
 
 const postModules = [
   { component: HelloWorld, frontmatter: helloWorldMeta, slug: 'hello-world' },
-  { component: BuildingTerminalPortfolio, frontmatter: terminalPortfolioMeta, slug: 'building-a-terminal-portfolio' },
+  {
+    component: BuildingTerminalPortfolio,
+    frontmatter: terminalPortfolioMeta,
+    slug: 'building-a-terminal-portfolio',
+  },
 ]
 
 export const posts: Post[] = postModules

@@ -16,7 +16,8 @@ interface SEOProps {
 }
 
 const SITE_NAME = 'Gavyn Caldwell'
-const DEFAULT_DESCRIPTION = 'Senior Frontend Developer specializing in React, TypeScript, and Next.js. Leading AI tooling adoption and large-scale application modernization.'
+const DEFAULT_DESCRIPTION =
+  'Senior Frontend Developer specializing in React, TypeScript, and Next.js. Leading AI tooling adoption and large-scale application modernization.'
 const SITE_URL = 'https://gavyncaldwell.com'
 const DEFAULT_OG_IMAGE = `${SITE_URL}/og-image.png`
 

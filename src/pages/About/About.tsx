@@ -31,13 +31,14 @@ export default function About() {
             <div className="about__intro-text">
               <h2 className="about__section-title"># who i am</h2>
               <p className="about__text">
-                I'm Gavyn Caldwell, a Senior Frontend Developer based in Ogden, Utah with {yearsExperience} years
-                of experience building for the web. I specialize in React, TypeScript, and Next.js, with a
-                focus on large-scale application modernization and developer experience.
+                I'm Gavyn Caldwell, a Senior Frontend Developer based in Ogden, Utah with{' '}
+                {yearsExperience} years of experience building for the web. I specialize in React,
+                TypeScript, and Next.js, with a focus on large-scale application modernization and
+                developer experience.
               </p>
               <p className="about__text">
-                Currently at Koddi, I'm leading AI tooling adoption across engineering teams and rebuilding
-                legacy Angular applications with modern React architecture.
+                Currently at Koddi, I'm leading AI tooling adoption across engineering teams and
+                rebuilding legacy Angular applications with modern React architecture.
               </p>
             </div>
           </div>
@@ -50,21 +51,24 @@ export default function About() {
             alt="My desk setup"
             className="about__image"
           />
-          <figcaption className="about__figcaption">The command center — where I spend most of my time</figcaption>
+          <figcaption className="about__figcaption">
+            The command center — where I spend most of my time
+          </figcaption>
         </figure>
 
         <section className="about__section">
           <h2 className="about__section-title"># what drives me</h2>
           <p className="about__text">
-            I'm passionate about building high-quality, scalable web solutions that drive both business
-            growth and developer productivity. I believe in the power of modern tooling and AI-assisted
-            workflows to transform how we build software—but I also know when human judgment and domain
-            expertise are irreplaceable.
+            I'm passionate about building high-quality, scalable web solutions that drive both
+            business growth and developer productivity. I believe in the power of modern tooling and
+            AI-assisted workflows to transform how we build software—but I also know when human
+            judgment and domain expertise are irreplaceable.
           </p>
           <p className="about__text">
-            I'm a strong advocate for privacy and FOSS (Free and Open Source Software). I run a completely
-            degoogled phone on GrapheneOS and maintain an extensive self-hosted infrastructure on my home
-            server. I prefer terminal-native workflows and believe in owning your own data.
+            I'm a strong advocate for privacy and FOSS (Free and Open Source Software). I run a
+            completely degoogled phone on GrapheneOS and maintain an extensive self-hosted
+            infrastructure on my home server. I prefer terminal-native workflows and believe in
+            owning your own data.
           </p>
         </section>
 
@@ -98,7 +102,9 @@ export default function About() {
             alt="Coffee station"
             className="about__image"
           />
-          <figcaption className="about__figcaption">The coffee corner — where I dial in shots and procrastinate</figcaption>
+          <figcaption className="about__figcaption">
+            The coffee corner — where I dial in shots and procrastinate
+          </figcaption>
         </figure>
 
         <section className="about__section">
@@ -117,15 +123,15 @@ export default function About() {
             <div className="about__hobby-card">
               <span className="about__hobby-label">rc drift</span>
               <p className="about__hobby-desc">
-                Member of the Slide Logic drift team. Running a Reve D RDX (GR Corolla) and
-                3Racing Sakura D6 (240Z) with Futaba and Hobbywing electronics.
+                Member of the Slide Logic drift team. Running a Reve D RDX (GR Corolla) and 3Racing
+                Sakura D6 (240Z) with Futaba and Hobbywing electronics.
               </p>
             </div>
             <div className="about__hobby-card">
               <span className="about__hobby-label">cars</span>
               <p className="about__hobby-desc">
-                Building a 2003 GTI 1.8T — planning a fully forged motor, 3576 turbo,
-                and built 02M transmission targeting 600-700hp.
+                Building a 2003 GTI 1.8T — planning a fully forged motor, 3576 turbo, and built 02M
+                transmission targeting 600-700hp.
               </p>
             </div>
             <div className="about__hobby-card">
@@ -138,8 +144,8 @@ export default function About() {
             <div className="about__hobby-card">
               <span className="about__hobby-label">creative</span>
               <p className="about__hobby-desc">
-                Watercolor painting, drawing, sculpting. Playing guitar, Irish whistle,
-                and ravvast drum.
+                Watercolor painting, drawing, sculpting. Playing guitar, Irish whistle, and ravvast
+                drum.
               </p>
             </div>
             <div className="about__hobby-card">
@@ -159,17 +165,34 @@ export default function About() {
             alt="Linux desktop"
             className="about__image"
           />
-          <figcaption className="about__figcaption">Fedora + GNOME — terminal-native everything</figcaption>
+          <figcaption className="about__figcaption">
+            Fedora + GNOME — terminal-native everything
+          </figcaption>
         </figure>
 
         <section className="about__section">
           <h2 className="about__section-title"># key differentiators</h2>
           <ul className="about__list about__list--numbered">
-            <li><strong>AI Leadership</strong> — One of the few frontend developers actively leading AI adoption, building custom agents, and training teams</li>
-            <li><strong>Modernization Expert</strong> — Proven track record rebuilding legacy Angular apps with modern React architecture</li>
-            <li><strong>Team Leadership</strong> — Experience leading distributed teams and mentoring engineers</li>
-            <li><strong>Privacy Advocate</strong> — Unique perspective on building user-respecting applications</li>
-            <li><strong>{yearsExperience} Years of React</strong> — Deep expertise from Redux to modern patterns like TanStack Query and Zustand</li>
+            <li>
+              <strong>AI Leadership</strong> — One of the few frontend developers actively leading
+              AI adoption, building custom agents, and training teams
+            </li>
+            <li>
+              <strong>Modernization Expert</strong> — Proven track record rebuilding legacy Angular
+              apps with modern React architecture
+            </li>
+            <li>
+              <strong>Team Leadership</strong> — Experience leading distributed teams and mentoring
+              engineers
+            </li>
+            <li>
+              <strong>Privacy Advocate</strong> — Unique perspective on building user-respecting
+              applications
+            </li>
+            <li>
+              <strong>{yearsExperience} Years of React</strong> — Deep expertise from Redux to
+              modern patterns like TanStack Query and Zustand
+            </li>
           </ul>
         </section>
       </div>

@@ -4,13 +4,10 @@ import mdx from '@mdx-js/rollup'
 import { resolve } from 'path'
 
 export default defineConfig({
-  plugins: [
-    { enforce: 'pre', ...mdx() },
-    react(),
-  ],
+  plugins: [{ enforce: 'pre', ...mdx() }, react()],
   resolve: {
     alias: {
-      '@': resolve(__dirname, './src')
-    }
-  }
+      '@': resolve(__dirname, './src'),
+    },
+  },
 })

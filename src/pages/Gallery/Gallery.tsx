@@ -10,15 +10,14 @@ export default function Gallery() {
   const [filter, setFilter] = useState<Category>('all')
   const [selectedImage, setSelectedImage] = useState<GalleryImage | null>(null)
 
-  const filteredImages = filter === 'all'
-    ? galleryImages
-    : galleryImages.filter(img => img.category === filter)
+  const filteredImages =
+    filter === 'all' ? galleryImages : galleryImages.filter(img => img.category === filter)
 
   const categories: { value: Category; label: string }[] = [
     { value: 'all', label: 'all' },
     { value: 'setup', label: 'setup' },
     { value: 'coffee', label: 'coffee' },
-    { value: 'life', label: 'life' }
+    { value: 'life', label: 'life' },
   ]
 
   const getItemClass = (image: GalleryImage) => {
@@ -61,14 +60,8 @@ export default function Gallery() {
               className={getItemClass(image)}
               onClick={() => setSelectedImage(image)}
             >
-              <img
-                src={image.src}
-                alt={image.alt}
-                loading="lazy"
-              />
-              {image.caption && (
-                <span className="gallery__item-caption">{image.caption}</span>
-              )}
+              <img src={image.src} alt={image.alt} loading="lazy" />
+              {image.caption && <span className="gallery__item-caption">{image.caption}</span>}
             </button>
           ))}
         </div>
@@ -77,10 +70,7 @@ export default function Gallery() {
       {selectedImage && (
         <div className="gallery__lightbox" onClick={() => setSelectedImage(null)}>
           <div className="gallery__lightbox-content" onClick={e => e.stopPropagation()}>
-            <button
-              className="gallery__lightbox-close"
-              onClick={() => setSelectedImage(null)}
-            >
+            <button className="gallery__lightbox-close" onClick={() => setSelectedImage(null)}>
               ×
             </button>
             <img src={selectedImage.src} alt={selectedImage.alt} />

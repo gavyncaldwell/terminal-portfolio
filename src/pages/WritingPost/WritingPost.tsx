@@ -60,7 +60,9 @@ export default function WritingPost() {
           {post.tags && post.tags.length > 0 && (
             <div className="writing-post__tags">
               {post.tags.map(tag => (
-                <span key={tag} className="writing-post__tag">{tag}</span>
+                <span key={tag} className="writing-post__tag">
+                  {tag}
+                </span>
               ))}
             </div>
           )}

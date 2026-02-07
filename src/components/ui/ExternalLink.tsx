@@ -16,7 +16,9 @@ export default function ExternalLink({ href, children, className = '' }: Externa
       className={`external-link ${className}`}
     >
       {children}
-      <span className="external-link__icon" aria-hidden="true">↗</span>
+      <span className="external-link__icon" aria-hidden="true">
+        ↗
+      </span>
     </a>
   )
 }

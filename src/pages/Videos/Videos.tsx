@@ -62,9 +62,7 @@ export default function Videos() {
         </div>
       </section>
 
-      {videos.length === 0 && (
-        <p className="videos__empty">No videos yet. Check back soon!</p>
-      )}
+      {videos.length === 0 && <p className="videos__empty">No videos yet. Check back soon!</p>}
     </div>
   )
 }

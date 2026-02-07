@@ -25,9 +25,7 @@ export default function SectionCard({ title, action, children }: SectionCardProp
           </Link>
         )}
       </div>
-      <div className="section-card__content">
-        {children}
-      </div>
+      <div className="section-card__content">{children}</div>
     </section>
   )
 }

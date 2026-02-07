@@ -32,15 +32,18 @@ export default function Home() {
       <Prompt command="whoami" />
       <div className="terminal-output">
         <p>Gavyn Caldwell — Senior Frontend Developer, privacy advocate, and serial hobbyist.</p>
-        <p>{yearsExperience} years building for the web. React, TypeScript, Next.js. Currently leading AI tooling adoption at Koddi.</p>
+        <p>
+          {yearsExperience} years building for the web. React, TypeScript, Next.js. Currently
+          leading AI tooling adoption at Koddi.
+        </p>
       </div>
 
       <Prompt command="cat" args="./bio.md" />
       <div className="terminal-output">
         <p>
-          I specialize in large-scale application modernization—rebuilding legacy Angular apps
-          with modern React architecture. I've trained teams on AI-assisted development workflows
-          and built custom agents to accelerate how we ship code.
+          I specialize in large-scale application modernization—rebuilding legacy Angular apps with
+          modern React architecture. I've trained teams on AI-assisted development workflows and
+          built custom agents to accelerate how we ship code.
         </p>
         <p>
           Strong believer in owning your data. I run a degoogled phone, self-host everything I can,
@@ -128,9 +131,7 @@ export default function Home() {
         <ul className="home__social-list">
           {socialLinks.map(link => (
             <li key={link.name}>
-              <ExternalLink href={link.url}>
-                {link.name}
-              </ExternalLink>
+              <ExternalLink href={link.url}>{link.name}</ExternalLink>
               <span className="home__social-username">{link.username}</span>
             </li>
           ))}
