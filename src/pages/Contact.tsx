@@ -1,11 +1,18 @@
 import { Prompt } from '../components/terminal'
 import { ExternalLink } from '../components/ui'
+import { SEO } from '../components/seo'
 import { socialLinks } from '../data/social'
 import './Contact.css'
 
 export default function Contact() {
   return (
     <div className="contact">
+      <SEO
+        title="Contact"
+        canonical="/contact"
+        description="Get in touch with Gavyn Caldwell. Reach out for collaboration, projects, or just to connect."
+      />
+
       <header className="contact__header">
         <Prompt command="./contact.sh" />
       </header>

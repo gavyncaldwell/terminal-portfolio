@@ -1,5 +1,6 @@
 import { useParams, Link } from 'react-router-dom'
 import { Prompt } from '../components/terminal'
+import { SEO, BlogPostingSchema } from '../components/seo'
 import { getPostBySlug, getAdjacentPosts } from '../utils/posts'
 import { formatDate } from '../utils/formatDate'
 import '../styles/mdx.css'
@@ -13,6 +14,7 @@ export default function WritingPost() {
   if (!post) {
     return (
       <div className="writing-post">
+        <SEO title="Post Not Found" noindex />
         <header className="writing-post__header">
           <Prompt command="cat" args={`./writing/${slug || 'unknown'}.mdx`} />
         </header>
@@ -28,6 +30,25 @@ export default function WritingPost() {
 
   return (
     <div className="writing-post">
+      <SEO
+        title={post.title}
+        description={post.description}
+        canonical={`/writing/${slug}`}
+        ogType="article"
+        article={{
+          publishedTime: post.date,
+          author: 'Gavyn Caldwell',
+          tags: post.tags,
+        }}
+      />
+      <BlogPostingSchema
+        title={post.title}
+        description={post.description}
+        datePublished={post.date}
+        slug={slug!}
+        tags={post.tags}
+      />
+
       <header className="writing-post__header">
         <Prompt command="cat" args={`./writing/${slug}.mdx`} />
       </header>

@@ -6,7 +6,7 @@ import { resolve } from 'path'
 export default defineConfig({
   plugins: [
     { enforce: 'pre', ...mdx() },
-    react()
+    react(),
   ],
   resolve: {
     alias: {

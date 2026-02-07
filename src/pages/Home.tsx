@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import { TerminalWindow, InteractiveTerminal, Prompt, Cursor } from '../components/terminal'
 import { SectionCard } from '../components/cards'
 import { ExternalLink } from '../components/ui'
+import { SEO, PersonSchema } from '../components/seo'
 import { socialLinks } from '../data/social'
 import { getYearsOfExperience } from '../utils/experience'
 import './Home.css'
@@ -56,6 +57,12 @@ export default function Home() {
 
   return (
     <div className="home">
+      <SEO
+        canonical="/"
+        description="Senior Frontend Developer specializing in React, TypeScript, and Next.js. Leading AI tooling adoption at Koddi."
+      />
+      <PersonSchema />
+
       {/* Hero Terminal */}
       <TerminalWindow title="~/gavyncaldwell">
         {staticWelcome}

@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { Prompt } from '../components/terminal'
+import { SEO } from '../components/seo'
 import { galleryImages, GalleryImage } from '../data/gallery'
 import './Gallery.css'
 
@@ -30,6 +31,12 @@ export default function Gallery() {
 
   return (
     <div className="gallery">
+      <SEO
+        title="Gallery"
+        canonical="/gallery"
+        description="Photos of Gavyn Caldwell's desk setup, coffee station, and life moments."
+      />
+
       <header className="gallery__header">
         <Prompt command="ls" args="./photos" />
       </header>

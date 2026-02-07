@@ -1,11 +1,18 @@
 import { Prompt } from '../components/terminal'
 import { PostCard } from '../components/cards'
+import { SEO } from '../components/seo'
 import { posts } from '../utils/posts'
 import './Writing.css'
 
 export default function Writing() {
   return (
     <div className="writing">
+      <SEO
+        title="Writing"
+        canonical="/writing"
+        description="Blog posts and articles by Gavyn Caldwell on frontend development, React, TypeScript, AI tooling, and more."
+      />
+
       <header className="writing__header">
         <Prompt command="ls" args="./writing" />
       </header>

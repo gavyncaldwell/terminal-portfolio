@@ -1,5 +1,6 @@
 import { Prompt } from '../components/terminal'
 import { ExternalLink } from '../components/ui'
+import { SEO } from '../components/seo'
 import { workExperience, projects } from '../data/work'
 import './Work.css'
 
@@ -9,6 +10,12 @@ export default function Work() {
 
   return (
     <div className="work">
+      <SEO
+        title="Work"
+        canonical="/work"
+        description="Professional experience and projects by Gavyn Caldwell. Senior Frontend Developer with expertise in React modernization and AI tooling."
+      />
+
       <header className="work__header">
         <Prompt command="ls" args="-la ./work" />
       </header>

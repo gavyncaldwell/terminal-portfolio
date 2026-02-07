@@ -1,4 +1,5 @@
 import { Prompt } from '../components/terminal'
+import { SEO, PersonSchema } from '../components/seo'
 import { getYearsOfExperience } from '../utils/experience'
 import './About.css'
 
@@ -7,6 +8,13 @@ export default function About() {
 
   return (
     <div className="about">
+      <SEO
+        title="About"
+        canonical="/about"
+        description="Learn about Gavyn Caldwell - Senior Frontend Developer specializing in React, TypeScript, and Next.js. Privacy advocate and AI tooling leader."
+      />
+      <PersonSchema />
+
       <header className="about__header">
         <Prompt command="cat" args="./about.md" />
       </header>

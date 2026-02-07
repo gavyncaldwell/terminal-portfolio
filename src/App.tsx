@@ -6,6 +6,8 @@ import Work from './pages/Work'
 import Gear from './pages/Gear'
 import Gallery from './pages/Gallery'
 import Contact from './pages/Contact'
+import Writing from './pages/Writing'
+import WritingPost from './pages/WritingPost'
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
         <Route path="/gear" element={<Gear />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/writing" element={<Writing />} />
+        <Route path="/writing/:slug" element={<WritingPost />} />
       </Route>
     </Routes>
   )

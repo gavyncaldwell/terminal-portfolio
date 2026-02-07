@@ -1,11 +1,18 @@
 import { Prompt } from '../components/terminal'
 import { ExternalLink } from '../components/ui'
+import { SEO } from '../components/seo'
 import { gearData } from '../data/gear'
 import './Gear.css'
 
 export default function Gear() {
   return (
     <div className="gear">
+      <SEO
+        title="Gear"
+        canonical="/gear"
+        description="Tools, hardware, and equipment used by Gavyn Caldwell for development, coffee brewing, and hobbies."
+      />
+
       <header className="gear__header">
         <Prompt command="cat" args="./gear.md" />
       </header>
