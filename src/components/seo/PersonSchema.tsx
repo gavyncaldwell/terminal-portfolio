@@ -15,6 +15,7 @@ export default function PersonSchema() {
       'https://github.com/gavyncaldwell',
       'https://linkedin.com/in/gavyncaldwell',
       'https://www.youtube.com/@gavshobbyquest',
+      'https://loosewire.dev',
     ],
     knowsAbout: ['React', 'TypeScript', 'Next.js', 'AI Tooling', 'Frontend Development'],
     image: 'https://gavyncaldwell.com/images/gallery/headshot.jpg',

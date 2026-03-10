@@ -43,7 +43,12 @@ export default function Home() {
         <p>
           I specialize in large-scale application modernization—rebuilding legacy Angular apps with
           modern React architecture. I've trained teams on AI-assisted development workflows and
-          built custom agents to accelerate how we ship code.
+          built custom agents to accelerate how we ship code. Currently building privacy-focused
+          software at{' '}
+          <a href="https://loosewire.dev" target="_blank" rel="noopener noreferrer">
+            loosewire.dev
+          </a>
+          .
         </p>
         <p>
           Strong believer in owning your data. I run a degoogled phone, self-host everything I can,
@@ -62,7 +67,7 @@ export default function Home() {
     <div className="home">
       <SEO
         canonical="/"
-        description="Senior Frontend Developer specializing in React, TypeScript, and Next.js. Leading AI tooling adoption at Koddi."
+        description="Senior Frontend Developer specializing in React, TypeScript, and Next.js. Leading AI tooling adoption at Koddi. Building privacy-focused software at loosewire.dev."
       />
       <PersonSchema />
 
@@ -104,7 +109,11 @@ export default function Home() {
           <ul className="home__currently-list">
             <li>
               <span className="home__currently-label">building</span>
-              <span className="home__currently-value">Claude Code plugins & custom AI agents</span>
+              <span className="home__currently-value">
+                <ExternalLink href="https://loosewire.dev">Loosewire</ExternalLink> —{' '}
+                <ExternalLink href="https://loosewire.dev/harknotes">HarkNotes</ExternalLink> &{' '}
+                <ExternalLink href="https://loosewire.dev/farscry">Farscry</ExternalLink>
+              </span>
             </li>
             <li>
               <span className="home__currently-label">shipping</span>

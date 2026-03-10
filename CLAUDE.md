@@ -38,9 +38,20 @@ The interactive terminal (`src/components/terminal/InteractiveTerminal.tsx`) is 
 /gear       → Gear
 /gallery    → Gallery
 /contact    → Contact
-/writing    → Blog list
-/writing/:slug → Blog post
+/blog       → Aggregated blog (all sites)
+/writing    → Local posts list
+/writing/:slug → Local blog post
 ```
+
+## Cross-Site Backlinking
+
+This site is part of a backlinking network across gavyncaldwell.com, loosewire.dev, and future sites. Full spec:
+https://raw.githubusercontent.com/LooseWireDev/loosewire-web/main/docs/backlink-network.md
+
+Key files:
+- `src/data/feeds.ts` — Feed registry (add new sites here)
+- `src/utils/blogFeed.ts` — Fetches + merges all feeds into unified blog
+- `/blog` route — Aggregated blog page showing posts from all sites
 
 ## Code Style
 

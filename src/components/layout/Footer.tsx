@@ -8,6 +8,12 @@ export default function Footer() {
       <div className="container">
         <div className="footer__content">
           <p className="footer__privacy">no tracking · no cookies · self-hosted</p>
+          <p className="footer__projects">
+            also building{' '}
+            <a href="https://loosewire.dev" target="_blank" rel="noopener noreferrer">
+              loosewire.dev
+            </a>
+          </p>
           <p className="footer__copyright">© {currentYear} Gavyn Caldwell</p>
         </div>
       </div>

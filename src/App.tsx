@@ -8,6 +8,7 @@ import Gallery from './pages/Gallery'
 import Contact from './pages/Contact'
 import Writing from './pages/Writing'
 import WritingPost from './pages/WritingPost'
+import Blog from './pages/Blog'
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/writing" element={<Writing />} />
         <Route path="/writing/:slug" element={<WritingPost />} />
+        <Route path="/blog" element={<Blog />} />
       </Route>
     </Routes>
   )

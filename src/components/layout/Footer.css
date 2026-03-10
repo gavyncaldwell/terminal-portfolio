@@ -16,6 +16,21 @@
   font-size: var(--text-xs);
 }
 
+.footer__projects {
+  color: var(--text-muted);
+  font-size: var(--text-xs);
+}
+
+.footer__projects a {
+  color: var(--text-secondary);
+  text-decoration: none;
+}
+
+.footer__projects a:hover {
+  color: var(--text-primary);
+  text-decoration: underline;
+}
+
 .footer__copyright {
   color: var(--text-muted);
   font-size: var(--text-xs);

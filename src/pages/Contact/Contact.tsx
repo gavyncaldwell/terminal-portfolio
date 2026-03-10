@@ -47,6 +47,40 @@ export default function Contact() {
         </section>
 
         <section className="contact__section">
+          <h2 className="contact__section-title"># projects</h2>
+          <ul className="contact__links">
+            <li className="contact__link-item">
+              <span className="contact__link-name">Loosewire</span>
+              <ExternalLink href="https://loosewire.dev">loosewire.dev</ExternalLink>
+            </li>
+            <li className="contact__link-item">
+              <span className="contact__link-name">HarkNotes</span>
+              <ExternalLink href="https://loosewire.dev/harknotes">
+                Local meeting transcription
+              </ExternalLink>
+            </li>
+            <li className="contact__link-item">
+              <span className="contact__link-name">Farscry</span>
+              <ExternalLink href="https://loosewire.dev/farscry">
+                Self-hosted video calling
+              </ExternalLink>
+            </li>
+            <li className="contact__link-item">
+              <span className="contact__link-name">HarkNotes Blog</span>
+              <ExternalLink href="https://loosewire.dev/harknotes/blog">
+                loosewire.dev/harknotes/blog
+              </ExternalLink>
+            </li>
+            <li className="contact__link-item">
+              <span className="contact__link-name">Farscry Blog</span>
+              <ExternalLink href="https://loosewire.dev/farscry/blog">
+                loosewire.dev/farscry/blog
+              </ExternalLink>
+            </li>
+          </ul>
+        </section>
+
+        <section className="contact__section">
           <h2 className="contact__section-title"># prefer email?</h2>
           <p className="contact__text">
             Drop me a line at{' '}

@@ -80,6 +80,27 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    name: 'Loosewire',
+    description:
+      'Privacy-focused software studio building tools that keep your data local and under your control',
+    url: 'https://loosewire.dev',
+    tags: ['Privacy', 'Open Source', 'Software'],
+  },
+  {
+    name: 'HarkNotes',
+    description:
+      'Local-first meeting transcription — Whisper AI runs on your machine, no bot joins your calls, audio never leaves your device',
+    url: 'https://loosewire.dev/harknotes',
+    tags: ['Privacy', 'AI', 'macOS', 'Linux'],
+  },
+  {
+    name: 'Farscry',
+    description:
+      'Self-hostable, end-to-end encrypted video calling — no chat, no bloat, one Docker container',
+    url: 'https://loosewire.dev/farscry',
+    tags: ['Privacy', 'WebRTC', 'Self-hosted', 'Open Source'],
+  },
+  {
     name: 'terminal-portfolio',
     description:
       "This portfolio site you're looking at — terminal aesthetic with React and TypeScript",

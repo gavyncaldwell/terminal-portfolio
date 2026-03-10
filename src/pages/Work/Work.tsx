@@ -13,7 +13,7 @@ export default function Work() {
       <SEO
         title="Work"
         canonical="/work"
-        description="Professional experience and projects by Gavyn Caldwell. Senior Frontend Developer with expertise in React modernization and AI tooling."
+        description="Professional experience and projects by Gavyn Caldwell. Senior Frontend Developer with expertise in React modernization and AI tooling. Creator of Loosewire — privacy-focused software including HarkNotes and Farscry."
       />
 
       <header className="work__header">

@@ -1,0 +1,139 @@
+.blog {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+.blog__header {
+  margin-bottom: var(--space-2);
+}
+
+.blog__intro-text {
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.blog__intro-text a {
+  color: var(--emerald-400);
+  text-decoration: none;
+}
+
+.blog__intro-text a:hover {
+  text-decoration: underline;
+}
+
+.blog__filters {
+  display: flex;
+  gap: var(--space-2);
+  flex-wrap: wrap;
+}
+
+.blog__filter {
+  background: none;
+  border: 1px solid var(--border-primary);
+  color: var(--text-muted);
+  padding: var(--space-1) var(--space-3);
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.blog__filter:hover {
+  color: var(--text-secondary);
+  border-color: var(--text-muted);
+}
+
+.blog__filter--active {
+  color: var(--emerald-400);
+  border-color: var(--emerald-400);
+}
+
+.blog__list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.blog__status {
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+.blog__status a {
+  color: var(--emerald-400);
+  text-decoration: none;
+}
+
+.blog__status a:hover {
+  text-decoration: underline;
+}
+
+/* Blog cards */
+.blog-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  padding: var(--space-4);
+  border: 1px solid var(--border-primary);
+  transition: border-color var(--transition-fast);
+}
+
+.blog-card:hover {
+  border-color: var(--text-muted);
+}
+
+.blog-card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.blog-card__product {
+  font-size: var(--text-xs);
+  color: var(--emerald-400);
+  text-transform: lowercase;
+}
+
+.blog-card__date {
+  font-size: var(--text-xs);
+  color: var(--text-muted);
+}
+
+.blog-card__link {
+  color: var(--text-primary);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+.blog-card__link:hover {
+  color: var(--emerald-400);
+}
+
+.blog-card__title {
+  font-size: var(--text-base);
+  font-weight: 400;
+  margin: 0;
+}
+
+.blog-card__external {
+  color: var(--text-muted);
+  font-size: var(--text-xs);
+}
+
+.blog-card__description {
+  color: var(--text-muted);
+  font-size: var(--text-sm);
+  line-height: 1.5;
+}
+
+.blog-card__tags {
+  display: flex;
+  gap: var(--space-2);
+  flex-wrap: wrap;
+}
+
+.blog-card__read-time {
+  font-size: var(--text-xs);
+  color: var(--text-muted);
+}

@@ -1,4 +1,5 @@
 import { Prompt } from '../../components/terminal'
+import { ExternalLink } from '../../components/ui'
 import { SEO, PersonSchema } from '../../components/seo'
 import { getYearsOfExperience } from '../../utils/experience'
 import './About.css'
@@ -62,7 +63,13 @@ export default function About() {
             I'm passionate about building high-quality, scalable web solutions that drive both
             business growth and developer productivity. I believe in the power of modern tooling and
             AI-assisted workflows to transform how we build software—but I also know when human
-            judgment and domain expertise are irreplaceable.
+            judgment and domain expertise are irreplaceable. That same philosophy drives{' '}
+            <ExternalLink href="https://loosewire.dev">Loosewire</ExternalLink>, where I'm building
+            privacy-first software —{' '}
+            <ExternalLink href="https://loosewire.dev/harknotes">HarkNotes</ExternalLink> for local
+            meeting transcription and{' '}
+            <ExternalLink href="https://loosewire.dev/farscry">Farscry</ExternalLink> for
+            self-hosted encrypted video calling.
           </p>
           <p className="about__text">
             I'm a strong advocate for privacy and FOSS (Free and Open Source Software). I run a
@@ -175,7 +182,8 @@ export default function About() {
           <ul className="about__list about__list--numbered">
             <li>
               <strong>AI Leadership</strong> — One of the few frontend developers actively leading
-              AI adoption, building custom agents, and training teams
+              AI adoption, building custom agents, and training teams. Building privacy-first
+              software at <ExternalLink href="https://loosewire.dev">loosewire.dev</ExternalLink>
             </li>
             <li>
               <strong>Modernization Expert</strong> — Proven track record rebuilding legacy Angular

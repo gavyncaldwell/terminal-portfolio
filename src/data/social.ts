@@ -20,4 +20,9 @@ export const socialLinks: SocialLink[] = [
     url: 'https://www.youtube.com/@gavshobbyquest',
     username: '@gavshobbyquest',
   },
+  {
+    name: 'Loosewire',
+    url: 'https://loosewire.dev',
+    username: 'loosewire.dev',
+  },
 ]
